@@ -21,6 +21,10 @@ import tailwind from "./assets/tailwind.png"
 import mail from "./assets/gmail.png"
 import github from "./assets/github.png"
 import linkedin from "./assets/linkedin.png"
+import serviceMcqueen from "./assets/loginService.png"
+import astrogamer from "./assets/astrogamer.png"
+import mayco from "./assets/mayco.png"
+import wallet from "./assets/wallet.jpg"
 
 const App = () => {
   let [open, setOpen] = useState(false);
@@ -226,9 +230,49 @@ const App = () => {
       </Element>
       <Element
         name="portfolio"
-        className="element max-w-screen bg-white h-screen"
+        className="element max-w-screen bg-white min-h-[700px]"
       >
-        portfolio{" "}
+        <section class="text-gray-600 body-font">
+            <div class="container px-8 py-24 max-w-screen-xl mx-auto">
+                <div class="flex flex-wrap w-full mb-20">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                    <h1 class="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900">Portfolio</h1>
+                    <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">There are the projects that I have worked on</p>
+                </div>
+                
+                </div>
+                <div class="flex flex-wrap -m-4 justify-center">
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src={mayco} alt="content"/>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Mayco Cooperativa</h2>
+                    <a href="https://mayco-cooperativa.vercel.app/" class="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1" target="_blank" rel="noopener noreferrer">Link</a>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src={astrogamer} alt="content"/>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Astro Gamer</h2>
+                    <a href="https://p-grupal.vercel.app/" class=" bg-black rounded-md text-white p-2 hover:text-indigo-500 ml-1" target="_blank" rel="noopener noreferrer">Link</a>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src={wallet} alt="content"/>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Wallet Bank Alkemy</h2>
+                    <a href="https://github.com/miguelbel00/grupo-n-4" class="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1" target="_blank" rel="noopener noreferrer">Link</a>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                    <img class="h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6" src={serviceMcqueen} alt="content"/>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Service Mcqueen</h2>
+                    <a href="https://github.com/miguelbel00/ProyectoFinalBD" class="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1" target="_blank" rel="noopener noreferrer">Link</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
       </Element>
       <Element
         name="contact"
@@ -245,29 +289,35 @@ const App = () => {
                   <div class="flex flex-wrap justify-between ">
                     <div class="p-2 w-fit">
                       <div class="h-full flex  p-4 rounded-lg">
+                      <a href="mailto:miguelabeltranp@gmail.com" target="_blank" rel="noopener noreferrer">
                         <img
                           alt="team"
                           class="w-16 h-16 object-cover object-center flex-shrink-0  mr-4"
                           src={mail}
                         />
+                        </a>
                       </div>
                     </div>
                     <div class="p-2  w-fit">
                       <div class="h-full flex  p-4 rounded-lg">
+                      <a href="https://github.com/miguelbel00" target="_blank" rel="noopener noreferrer">
                         <img
                           alt="team"
                           class="w-16 h-16  object-cover object-center flex-shrink-0  mr-4"
                           src={github}
                         />
+                        </a>
                       </div>
                     </div>
                     <div class="p-2 w-fit">
                       <div class="h-full flex  p-4 rounded-lg">
+                      <a href="https://www.linkedin.com/in/miguelbel00/" target="_blank" rel="noopener noreferrer">
                         <img
                           alt="team"
                           class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0  mr-4"
                           src={linkedin}
                         />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -280,7 +330,7 @@ const App = () => {
     <div class="bg-gray-100">
         <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
              <p class="text-gray-500 text-sm text-center sm:text-left">© {new Date().getFullYear()} Miguel Beltran —
-             <a href="https://github.com/miguelbel00" class="text-gray-600 hover:text-indigo-500 ml-1" target="_blank" rel="noopener noreferrer">@miguelbel00</a>
+             <a href="https://github.com/miguelbel00" class=" hover:text-indigo-500 ml-1" target="_blank" rel="noopener noreferrer">@miguelbel00</a>
             </p>
              <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">You only live once</span>
      </div>
