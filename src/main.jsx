@@ -15,7 +15,7 @@ const Cv = () => {
     return (
         <div className='min-h-screen min-w-screen bg-white'>
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.16.105/build/pdf.worker.js" >
-                <div className="max-h-screen">  
+                <div className="min-h-screen min-w-screen">  
                     <Viewer
                         fileUrl={`https://porfolio-liard.vercel.app/cv.pdf`}
                         plugins={[
