@@ -230,7 +230,7 @@ const App = () => {
       </Element>
       <Element
         name="portfolio"
-        className="element max-w-screen bg-white min-h-[700px]"
+        className="element max-w-screen bg-white min-h-[800px]"
       >
         <section class="text-gray-600 body-font">
             <div class="container px-8 py-24 max-w-screen-xl mx-auto">
@@ -276,7 +276,7 @@ const App = () => {
       </Element>
       <Element
         name="contact"
-        className="element max-w-screen  bg-white h-[400px] p-10"
+        className="element max-w-screen  bg-white min-h-[400px] p-10"
       >
         <section class="text-gray-600 body-font sm:pt-0 pt-5  ">
                 <div class="container px-5  max-w-screen-xl mx-auto">
@@ -286,7 +286,7 @@ const App = () => {
                     </h1>
                     <p className="sm:text-3xl !text-lg  title-font font-bold mb-4 text-gray-900">Contact me to work together</p>
                   </div>
-                  <div class="flex flex-wrap justify-between ">
+                  <div class="flex flex-wrap pt-10 justify-between ">
                     <div class="p-2 w-fit">
                       <div class="h-full flex  p-4 rounded-lg">
                       <a href="mailto:miguelabeltranp@gmail.com" target="_blank" rel="noopener noreferrer">
