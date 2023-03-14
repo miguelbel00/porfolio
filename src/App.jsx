@@ -18,6 +18,9 @@ import express from "./assets/express.png"
 import node from "./assets/node.png"
 import react from "./assets/react.png"
 import tailwind from "./assets/tailwind.png"
+import mail from "./assets/gmail.png"
+import github from "./assets/github.png"
+import linkedin from "./assets/linkedin.png"
 
 const App = () => {
   let [open, setOpen] = useState(false);
@@ -138,7 +141,7 @@ const App = () => {
       </Element>
       <Element
         name="about"
-        className="element max-w-screen bg-white border-b-2 pt-[10vh] min-h-[800px]"
+        className="element max-w-screen bg-white  pt-[10vh] min-h-[800px]"
       >
         <div className="max-w-screen-xl text-3xl text-center text-gray-800 font-semibold pt-10 mx-auto h-auto  ">
           About Me
@@ -229,9 +232,47 @@ const App = () => {
       </Element>
       <Element
         name="contact"
-        className="element max-w-screen bg-white h-screen"
+        className="element max-w-screen  bg-white h-[400px] p-10"
       >
-        contact{" "}
+        <section class="text-gray-600 body-font sm:pt-0 pt-5  ">
+                <div class="container px-5  max-w-screen-xl mx-auto">
+                  <div class="flex flex-col text-left w-full pb-5 ">
+                    <h1 class="sm:text-3xl text-2xl font-bold pb-5 title-font text-gray-900">
+                      Skills & Technologies
+                    </h1>
+                    <p className="sm:text-3xl !text-lg  title-font font-bold mb-4 text-gray-900">Contact me to work together</p>
+                  </div>
+                  <div class="flex flex-wrap justify-between ">
+                    <div class="p-2 w-fit">
+                      <div class="h-full flex  p-4 rounded-lg">
+                        <img
+                          alt="team"
+                          class="w-16 h-16 object-cover object-center flex-shrink-0  mr-4"
+                          src={mail}
+                        />
+                      </div>
+                    </div>
+                    <div class="p-2  w-fit">
+                      <div class="h-full flex  p-4 rounded-lg">
+                        <img
+                          alt="team"
+                          class="w-16 h-16  object-cover object-center flex-shrink-0  mr-4"
+                          src={github}
+                        />
+                      </div>
+                    </div>
+                    <div class="p-2 w-fit">
+                      <div class="h-full flex  p-4 rounded-lg">
+                        <img
+                          alt="team"
+                          class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0  mr-4"
+                          src={linkedin}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
       </Element>
       <footer class="text-gray-600 body-font">
 
