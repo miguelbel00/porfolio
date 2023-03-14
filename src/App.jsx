@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Zoom, Reveal, Fade } from "react-reveal";
+import {  Link as Linked} from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import {
@@ -25,6 +26,8 @@ import serviceMcqueen from "./assets/loginService.png"
 import astrogamer from "./assets/astrogamer.png"
 import mayco from "./assets/mayco.png"
 import wallet from "./assets/wallet.jpg"
+
+
 
 const App = () => {
   let [open, setOpen] = useState(false);
@@ -113,6 +116,17 @@ const App = () => {
                   Contact
                 </Link>
               </li>
+              <li
+                className="md:ml-8 text-lg md:my-0 my-7  hover:text-sky-200 cursor-pointer duration-500"
+                onClick={() => setOpen(!open)}
+              >
+                <Linked
+                  to="/cv"
+                  
+                >
+                  CV
+                </Linked>
+              </li>
             </ul>
           </div>
         </nav>
@@ -145,7 +159,7 @@ const App = () => {
       </Element>
       <Element
         name="about"
-        className="element max-w-screen bg-white  pt-[10vh] min-h-[800px]"
+        className="element max-w-screen bg-white border-2 border-white pt-[10vh] min-h-[800px]"
       >
         <div className="max-w-screen-xl text-3xl text-center text-gray-800 font-semibold pt-10 mx-auto h-auto  ">
           About Me
