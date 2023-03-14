@@ -12,13 +12,14 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
+import face from './assets/face.png'
 
 const App = () => {
   let [open, setOpen] = useState(false);
   return (
     <div className="bg-[url('/bg.jpg')] max-w-screen  h-screen font-[Roboto]">
-      <header class=" sticky top-0">
-        <nav className="z-10  w-screen text-white text-lg bg-[#0000008a] fixed  top-0 left-0 font-serif">
+      <header className=" sticky top-0">
+        <nav className="z-10  w-screen text-white text-lg bg-black fixed  top-0 left-0 font-serif">
           <div className="md:flex items-center justify-around h-[10vh] md:h-[8vh] py-4 md:px-10 px-7">
             <div className="pt-4  pl-10 md:justify-center md:pt-0  text-2xl select-none cursor-default flex items-center gap-3 ">
               <p className="w-10 h-10 ">{`</>`}</p>
@@ -103,9 +104,20 @@ const App = () => {
 
         <Element
           name="home"
-          className="element max-w-screen h-screen"
-        >
-          home
+          className="element max-w-screen  h-screen flex justify-center bg-[#000000c9]   text-indigo-600 text-xl text-center"
+        ><section class="text-gray-600 body-font    my-auto">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="w-[300px] mb-10 md:mb-0">
+            <img class="object-cover object-center rounded-[500px] " alt="hero" src={face}/>
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl  text-indigo-600 ">Miguel Beltran
+            </h1>
+            <p className="title-font sm:text-4xl text-3xl  text-indigo-600 ">            FullStack Developer
+</p>
+          </div>
+        </div>
+      </section>
         </Element>
         <Element
           name="about"
