@@ -17,7 +17,7 @@ const Cv = () => {
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.16.105/build/pdf.worker.js" >
                 <div className="max-h-screen">  
                     <Viewer
-                        fileUrl={`http://127.0.0.1:5173/cv.pdf`}
+                        fileUrl={`https://porfolio-liard.vercel.app/cv.pdf`}
                         plugins={[
                             defaultLayoutPluginInstance,
                         ]}
