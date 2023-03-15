@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Zoom, Reveal, Fade } from "react-reveal";
 import {  Link as Linked} from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
@@ -121,7 +120,6 @@ const App = () => {
               >
                 <Linked
                   to="/cv"
-                  
                 >
                   CV
                 </Linked>
@@ -130,7 +128,6 @@ const App = () => {
           </div>
         </nav>
       </header>
-
       <Element
         name="home"
         className="element max-w-screen  h-screen flex justify-center bg-[#000000c9]  text-indigo-600 text-xl text-center"
@@ -161,19 +158,16 @@ const App = () => {
         className=" max-w-screen bg-white   pt-[10vh] min-h-[800px]"
       >
         <ScrollReveal>
-
-
           <div className="max-w-screen-xl text-3xl text-center  px-8 text-gray-800 font-semibold pt-10 mx-auto h-auto  ">
             About Me
             <div className=" md:flex pt-10 md:pt-20 gap-10 justify-center">
-                    <div className="flex flex-col md:max-w-[300px]  lg:max-w-[400px] xl:max-w-[600px]">
-                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                        FullStack Developer
-                      </h1>
-                      <p className="sm:text-3xl !text-lg font-medium title-font mb-4 text-gray-900">Hello, I'm Miguel, I'm FullStack Developer  graduate of Soy Henry Bootcamp where I could learn a few programming languajes like JavaScript, Node , React y Express with which I created several applicattions such as AstroGamer a Ecommerce where I could applied my knowledge
-
-                      My goal is keep learning about this tecnologic world and can use mi knowledge for develop apps in wich I can grow up like a good professional</p>
-                    </div>
+              <div className="flex flex-col md:max-w-[300px]  lg:max-w-[400px] xl:max-w-[600px]">
+                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+                  FullStack Developer
+                </h1>
+                <p className="sm:text-3xl !text-lg font-medium title-font mb-4 text-gray-900">Hello, I'm Miguel, I'm FullStack Developer  graduate of Soy Henry Bootcamp where I could learn a few programming languajes like JavaScript, Node , React y Express with which I created several applicattions such as AstroGamer a Ecommerce where I could applied my knowledge
+                  My goal is keep learning about this tecnologic world and can use mi knowledge for develop apps in wich I can grow up like a good professional</p>
+                </div>
               <div>
                 <section className="text-gray-600 body-font sm:pt-0 pt-5">
                   <div className="container px-5  mx-auto">
@@ -252,42 +246,57 @@ const App = () => {
         <ScrollReveal>
           <section className="text-gray-600 body-font">
               <div className="container px-8 py-24 max-w-screen-xl mx-auto">
-                  <div className="flex flex-wrap w-full mb-20">
+                <div className="flex flex-wrap w-full mb-20">
                   <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                      <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900">Portfolio</h1>
+                    <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900">Portfolio</h1>
                       <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">There are the projects that I have worked on</p>
                   </div>
-                  
-                  </div>
+                </div>
                   <div className="flex flex-wrap -m-4 justify-center">
-                  <div className="xl:w-1/4 md:w-1/2 p-4">
-                      <div className="bg-gray-100 p-6 rounded-lg">
-                      <img className="h-40 rounded w-full object-cover object-center mb-6" src={mayco} alt="content"/>
-                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Mayco Cooperativa</h2>
-                      <a href="https://mayco-cooperativa.vercel.app/" className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1" target="_blank" rel="noopener noreferrer">Link</a>
-                      </div>
+                    <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
+                      <div className="bg-gray-100 p-6 rounded-lg ">
+                        <div className="relative group">
+                          <img className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6" src={mayco} alt="content"/>
+                            <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
+                              <a href="https://www.cooperativamayco.com.ar" className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center" target="_blank" rel="noopener noreferrer">Demo</a>
+                            </div>
+                        </div>
+                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Mayco Cooperativa</h2>
+                    </div>
                   </div>
-                  <div className="xl:w-1/4 md:w-1/2 p-4">
-                      <div className="bg-gray-100 p-6 rounded-lg">
-                      <img className="h-40 rounded w-full object-cover object-center mb-6" src={astrogamer} alt="content"/>
-                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Astro Gamer</h2>
-                      <a href="https://p-grupal.vercel.app/" className=" bg-black rounded-md text-white p-2 hover:text-indigo-500 ml-1" target="_blank" rel="noopener noreferrer">Link</a>
+                  <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
+                    <div className="bg-gray-100 p-6 rounded-lg">
+                      <div className="relative group">
+                        <img className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6" src={astrogamer} alt="content"/>
+                          <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
+                            <a href="https://p-grupal.vercel.app" className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center" target="_blank" rel="noopener noreferrer">Demo</a>
+                          </div>
                       </div>
+                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">AstroGamer</h2>
+                    </div>
                   </div>
-                  <div className="xl:w-1/4 md:w-1/2 p-4">
-                      <div className="bg-gray-100 p-6 rounded-lg">
-                      <img className="h-40 rounded w-full object-cover object-center mb-6" src={wallet} alt="content"/>
+                  <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
+                    <div className="bg-gray-100 p-6 rounded-lg">
+                      <div className="relative group">
+                        <img className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6" src={wallet} alt="content"/>
+                          <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
+                            <a href="https://github.com/miguelbel00/grupo-n-4" className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center" target="_blank" rel="noopener noreferrer">Demo</a>
+                          </div>
+                      </div>
                       <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Wallet Bank Alkemy</h2>
-                      <a href="https://github.com/miguelbel00/grupo-n-4" className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1" target="_blank" rel="noopener noreferrer">Link</a>
-                      </div>
+                    </div>
                   </div>
-                  <div className="xl:w-1/4 md:w-1/2 p-4">
-                      <div className="bg-gray-100 p-6 rounded-lg">
-                      <img className="h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6" src={serviceMcqueen} alt="content"/>
-                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Service Mcqueen</h2>
-                      <a href="https://github.com/miguelbel00/ProyectoFinalBD" className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1" target="_blank" rel="noopener noreferrer">Link</a>
+                  <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
+                    <div className="bg-gray-100 p-6 rounded-lg">
+                      <div className="relative group">
+                        <img className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6" src={serviceMcqueen} alt="content"/>
+                          <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
+                            <a href="https://github.com/miguelbel00/ProyectoFinalBD" className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center" target="_blank" rel="noopener noreferrer">Demo</a>
+                          </div>
+                        </div>
+                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Service Mcqueen</h2>
                       </div>
-                  </div>
+                    </div>
                   </div>
               </div>
           </section>
