@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, CSSProperties } from "react";
+import React, { useRef, useEffect } from "react";
 import scrollReveal from "scrollreveal";
 
 
