@@ -7,7 +7,8 @@ const ScrollReveal = ({ children }) => {
   useEffect(() => {
     if (sectionRef.current)
       scrollReveal().reveal(sectionRef.current, {
-        delay: 500
+        delay: 500,
+        distance: '50%'
       });
   }, []);
 
