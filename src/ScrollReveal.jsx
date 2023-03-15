@@ -2,14 +2,11 @@ import React, { useRef, useEffect } from "react";
 import scrollReveal from "scrollreveal";
 
 
-const ScrollReveal = ({ children }) => {
+const ScrollReveal = ({ children,styles }) => {
   const sectionRef = useRef(null);
   useEffect(() => {
     if (sectionRef.current)
-      scrollReveal().reveal(sectionRef.current, {
-        delay: 500,
-        distance: '50%'
-      });
+      scrollReveal().reveal(sectionRef.current, styles);
   }, []);
 
   return (

@@ -132,7 +132,7 @@ const App = () => {
         name="home"
         className="element max-w-screen  h-screen flex justify-center bg-[#000000c9]  text-indigo-600 text-xl text-center"
       >
-        <ScrollReveal className=" text-gray-600 body-font my-auto">
+        <ScrollReveal styles={{delay: 700,useDelay:'once',reset:true, duration:1800,distance: '30%', origin:'left'}} className=" text-gray-600 body-font my-auto">
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center ">
             <div className="w-[300px] mb-10 md:mb-0 ">
               <img
@@ -157,7 +157,7 @@ const App = () => {
         name="about"
         className=" max-w-screen bg-white   pt-[10vh] min-h-[650px]"
       >
-        <ScrollReveal>
+        <ScrollReveal styles={{reset:true,duration:1800, distance: '30%', origin:'left'}}>
           <div className="max-w-screen-xl text-3xl text-center  px-8 text-gray-800 font-semibold pt-10 mx-auto h-auto  ">
             About Me
             <div className=" md:flex pt-10 md:pt-20 gap-10 justify-center">
@@ -243,7 +243,7 @@ const App = () => {
         name="portfolio"
         className="element max-w-screen bg-white min-h-[650px]"
       >
-        <ScrollReveal>
+        <ScrollReveal styles={{delay: 500,reset:true,duration:2000, distance: '30%', origin:'left'}}>
           <section className="text-gray-600 body-font">
               <div className="container px-8 py-16 max-w-screen-xl mx-auto">
                 <div className="flex flex-wrap w-full mb-20">
@@ -306,7 +306,7 @@ const App = () => {
         name="contact"
         className="element max-w-screen  bg-white min-h-[400px] p-10"
       >
-        <ScrollReveal>
+        <ScrollReveal styles={{reset:true,duration:1800, distance: '30%', origin:'left'}} >
           <section className="text-gray-600 body-font sm:pt-0 pt-5  ">
               <div className="container px-5  max-w-screen-xl mx-auto">
                 <div className="flex flex-col text-left w-full pb-5 ">
