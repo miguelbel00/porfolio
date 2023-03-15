@@ -155,7 +155,7 @@ const App = () => {
       </Element>
       <Element
         name="about"
-        className=" max-w-screen bg-white   pt-[10vh] min-h-[800px]"
+        className=" max-w-screen bg-white   pt-[10vh] min-h-[650px]"
       >
         <ScrollReveal>
           <div className="max-w-screen-xl text-3xl text-center  px-8 text-gray-800 font-semibold pt-10 mx-auto h-auto  ">
@@ -241,11 +241,11 @@ const App = () => {
       </Element>
       <Element
         name="portfolio"
-        className="element max-w-screen bg-white min-h-[800px]"
+        className="element max-w-screen bg-white min-h-[650px]"
       >
         <ScrollReveal>
           <section className="text-gray-600 body-font">
-              <div className="container px-8 py-24 max-w-screen-xl mx-auto">
+              <div className="container px-8 py-16 max-w-screen-xl mx-auto">
                 <div className="flex flex-wrap w-full mb-20">
                   <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                     <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900">Portfolio</h1>
