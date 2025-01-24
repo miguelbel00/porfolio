@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {  Link as Linked} from "react-router-dom";
+import { Link as Linked } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import {
@@ -12,19 +12,19 @@ import {
   scroller,
 } from "react-scroll";
 import face from "./assets/face.png";
-import java from "./assets/java.png"
-import javacript from "./assets/javascript.png"
-import express from "./assets/express.png"
-import node from "./assets/node.png"
-import react from "./assets/react.png"
-import tailwind from "./assets/tailwind.png"
-import mail from "./assets/gmail.png"
-import github from "./assets/github.png"
-import linkedin from "./assets/linkedin.png"
-import serviceMcqueen from "./assets/loginService.png"
-import astrogamer from "./assets/astrogamer.png"
-import mayco from "./assets/mayco.png"
-import wallet from "./assets/wallet.jpg"
+import java from "./assets/java.png";
+import javacript from "./assets/javascript.png";
+import express from "./assets/express.png";
+import node from "./assets/node.png";
+import react from "./assets/react.png";
+import tailwind from "./assets/tailwind.png";
+import mail from "./assets/gmail.png";
+import github from "./assets/github.png";
+import linkedin from "./assets/linkedin.png";
+import serviceMcqueen from "./assets/loginService.png";
+import astrogamer from "./assets/astrogamer.png";
+import mayco from "./assets/mayco.png";
+import wallet from "./assets/wallet.jpg";
 import ScrollReveal from "./ScrollReveal";
 
 const App = () => {
@@ -118,11 +118,7 @@ const App = () => {
                 className="md:ml-8 text-lg md:my-0 my-7  hover:text-sky-200 cursor-pointer duration-500"
                 onClick={() => setOpen(!open)}
               >
-                <Linked
-                  to="/cv"
-                >
-                  CV
-                </Linked>
+                <Linked to="/cv">CV</Linked>
               </li>
             </ul>
           </div>
@@ -132,7 +128,17 @@ const App = () => {
         name="home"
         className="element max-w-screen  h-screen flex justify-center bg-[#000000c9]  text-indigo-600 text-xl text-center"
       >
-        <ScrollReveal styles={{delay: 700,useDelay:'once',reset:true, duration:1800,distance: '30%', origin:'left'}} className=" text-gray-600 body-font my-auto">
+        <ScrollReveal
+          styles={{
+            delay: 700,
+            useDelay: "once",
+            reset: true,
+            duration: 1800,
+            distance: "30%",
+            origin: "left",
+          }}
+          className=" text-gray-600 body-font my-auto"
+        >
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center ">
             <div className="w-[300px] mb-10 md:mb-0 ">
               <img
@@ -157,7 +163,14 @@ const App = () => {
         name="about"
         className=" max-w-screen bg-white   pt-[10vh] min-h-[650px]"
       >
-        <ScrollReveal styles={{reset:true,duration:1800, distance: '30%', origin:'left'}}>
+        <ScrollReveal
+          styles={{
+            reset: true,
+            duration: 1800,
+            distance: "30%",
+            origin: "left",
+          }}
+        >
           <div className="max-w-screen-xl text-3xl text-center  px-8 text-gray-800 font-semibold pt-10 mx-auto h-auto  ">
             About Me
             <div className=" md:flex pt-10 md:pt-20 gap-10 justify-center">
@@ -165,9 +178,16 @@ const App = () => {
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
                   FullStack Developer
                 </h1>
-                <p className="sm:text-3xl !text-lg font-medium title-font mb-4 text-gray-900">Hello, I'm Miguel, I'm FullStack Developer  graduate of Soy Henry Bootcamp where I could learn a few programming languajes like JavaScript, Node , React y Express with which I created several applicattions such as AstroGamer a Ecommerce where I could applied my knowledge
-                  My goal is keep learning about this tecnologic world and can use mi knowledge for develop apps in wich I can grow up like a good professional</p>
-                </div>
+                <p className="sm:text-3xl !text-lg font-medium title-font mb-4 text-gray-900">
+                  Hello, I'm Miguel, I'm FullStack Developer graduate of Soy
+                  Henry Bootcamp where I could learn a few programming languajes
+                  like JavaScript, Node , React y Express with which I created
+                  several applicattions such as AstroGamer a Ecommerce where I
+                  could applied my knowledge My goal is keep learning about this
+                  tecnologic world and can use mi knowledge for develop apps in
+                  wich I can grow up like a good professional
+                </p>
+              </div>
               <div>
                 <section className="text-gray-600 body-font sm:pt-0 pt-5">
                   <div className="container px-5  mx-auto">
@@ -243,62 +263,125 @@ const App = () => {
         name="portfolio"
         className="element max-w-screen bg-white min-h-[650px]"
       >
-        <ScrollReveal styles={{delay: 500,reset:true,duration:2000, distance: '30%', origin:'left'}}>
+        <ScrollReveal
+          styles={{
+            delay: 500,
+            reset: true,
+            duration: 2000,
+            distance: "30%",
+            origin: "left",
+          }}
+        >
           <section className="text-gray-600 body-font">
-              <div className="container px-8 py-16 max-w-screen-xl mx-auto text-center">
-                <div className="flex flex-wrap w-full mb-20">
-                  <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                    <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900">Portfolio</h1>
-                      <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">There are the projects that I have worked on</p>
+            <div className="container px-8 py-16 max-w-screen-xl mx-auto ">
+              <div className=" w-full mb-6 lg:mb-0  text-center pb-2">
+                <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900">
+                  Portfolio
+                </h1>
+                <p className=" w-full leading-relaxed text-gray-500">
+                  There are the projects that I have worked on
+                </p>
+              </div>
+
+              <div className="flex flex-wrap -m-4 justify-center">
+                <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg ">
+                    <div className="relative group">
+                      <img
+                        className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6"
+                        src={mayco}
+                        alt="content"
+                      />
+                      <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
+                        <a
+                          href="https://www.cooperativamayco.com.ar"
+                          className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Demo
+                        </a>
+                      </div>
+                    </div>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      Mayco Cooperativa
+                    </h2>
                   </div>
                 </div>
-                  <div className="flex flex-wrap -m-4 justify-center">
-                    <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
-                      <div className="bg-gray-100 p-6 rounded-lg ">
-                        <div className="relative group">
-                          <img className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6" src={mayco} alt="content"/>
-                            <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
-                              <a href="https://www.cooperativamayco.com.ar" className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center" target="_blank" rel="noopener noreferrer">Demo</a>
-                            </div>
-                        </div>
-                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Mayco Cooperativa</h2>
-                    </div>
-                  </div>
-                  <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
-                    <div className="bg-gray-100 p-6 rounded-lg">
-                      <div className="relative group">
-                        <img className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6" src={astrogamer} alt="content"/>
-                          <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
-                            <a href="https://p-grupal.vercel.app" className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center" target="_blank" rel="noopener noreferrer">Demo</a>
-                          </div>
-                      </div>
-                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">AstroGamer</h2>
-                    </div>
-                  </div>
-                  <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
-                    <div className="bg-gray-100 p-6 rounded-lg">
-                      <div className="relative group">
-                        <img className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6" src={wallet} alt="content"/>
-                          <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
-                            <a href="https://github.com/miguelbel00/grupo-n-4" className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center" target="_blank" rel="noopener noreferrer">Demo</a>
-                          </div>
-                      </div>
-                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Wallet Bank Alkemy</h2>
-                    </div>
-                  </div>
-                  <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
-                    <div className="bg-gray-100 p-6 rounded-lg">
-                      <div className="relative group">
-                        <img className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6" src={serviceMcqueen} alt="content"/>
-                          <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
-                            <a href="https://github.com/miguelbel00/ProyectoFinalBD" className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center" target="_blank" rel="noopener noreferrer">Demo</a>
-                          </div>
-                        </div>
-                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Service Mcqueen</h2>
+                <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <div className="relative group">
+                      <img
+                        className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6"
+                        src={astrogamer}
+                        alt="content"
+                      />
+                      <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
+                        <a
+                          href="https://p-grupal.vercel.app"
+                          className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Demo
+                        </a>
                       </div>
                     </div>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      AstroGamer
+                    </h2>
                   </div>
+                </div>
+                <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <div className="relative group">
+                      <img
+                        className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6"
+                        src={wallet}
+                        alt="content"
+                      />
+                      <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
+                        <a
+                          href="https://github.com/miguelbel00/grupo-n-4"
+                          className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Demo
+                        </a>
+                      </div>
+                    </div>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      Wallet Bank Alkemy
+                    </h2>
+                  </div>
+                </div>
+                <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <div className="relative group">
+                      <img
+                        className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6"
+                        src={serviceMcqueen}
+                        alt="content"
+                      />
+                      <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
+                        <a
+                          href="https://github.com/miguelbel00/ProyectoFinalBD"
+                          className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Demo
+                        </a>
+                      </div>
+                    </div>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      Service Mcqueen
+                    </h2>
+                  </div>
+                </div>
               </div>
+            </div>
           </section>
         </ScrollReveal>
       </Element>
@@ -306,18 +389,29 @@ const App = () => {
         name="contact"
         className="element max-w-screen  bg-white min-h-[400px] p-10"
       >
-        <ScrollReveal styles={{reset:true,duration:1800, distance: '30%', origin:'left'}} >
-          <section className="text-gray-600 body-font sm:pt-0 pt-5  ">
-              <div className="container px-5  max-w-screen-xl mx-auto text-center">
-                <div className="flex flex-col text-left w-full pb-5 ">
-                  <h1 className="sm:text-3xl text-2xl font-bold pb-5 title-font text-gray-900">
-                    Reach me at
-                  </h1>
-                </div>
-                <div className="flex flex-wrap pt-10 justify-evenly ">
-                  <div className="p-2 w-fit">
-                    <div className="h-full flex  p-4 rounded-lg">
-                    <a href="mailto:miguelabeltranp@gmail.com" target="_blank" rel="noopener noreferrer">
+        <ScrollReveal
+          styles={{
+            reset: true,
+            duration: 1800,
+            distance: "30%",
+            origin: "left",
+          }}
+        >
+          <section className="text-gray-600 body-font sm:pt-0 pt-5">
+            <div className="container px-5  max-w-screen-xl mx-auto  pt-2">
+              <div className="flex flex-col text-left w-full pb-5  text-center ">
+                <h1 className="sm:text-3xl text-2xl font-bold pb-5 title-font text-gray-900">
+                  Reach me at
+                </h1>
+              </div>
+              <div className="flex flex-wrap pt-10 justify-evenly ">
+                <div className="p-2 w-fit">
+                  <div className="h-full flex  p-4 rounded-lg">
+                    <a
+                      href="mailto:miguelabeltranp@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img
                         alt="team"
                         className="w-16 h-16 object-cover object-center flex-shrink-0  mr-4"
@@ -328,7 +422,11 @@ const App = () => {
                 </div>
                 <div className="p-2  w-fit">
                   <div className="h-full flex  p-4 rounded-lg">
-                    <a href="https://github.com/miguelbel00" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://github.com/miguelbel00"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img
                         alt="team"
                         className="w-16 h-16  object-cover object-center flex-shrink-0  mr-4"
@@ -339,7 +437,11 @@ const App = () => {
                 </div>
                 <div className="p-2 w-fit">
                   <div className="h-full flex  p-4 rounded-lg">
-                    <a href="https://www.linkedin.com/in/miguelbel00/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://www.linkedin.com/in/miguelbel00/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img
                         alt="team"
                         className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0  mr-4"
@@ -357,10 +459,20 @@ const App = () => {
         <div className="border-t border-gray-200">
           <div className="bg-gray-100">
             <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-              <p className="text-gray-500 text-sm text-center sm:text-left">© {new Date().getFullYear()} Miguel Beltran —
-                <a href="https://github.com/miguelbel00" className=" hover:text-indigo-500 ml-1" target="_blank" rel="noopener noreferrer">@miguelbel00</a>
+              <p className="text-gray-500 text-sm text-center sm:text-left">
+                © {new Date().getFullYear()} Miguel Beltran —
+                <a
+                  href="https://github.com/miguelbel00"
+                  className=" hover:text-indigo-500 ml-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @miguelbel00
+                </a>
               </p>
-              <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">You only live once</span>
+              <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
+                You only live once
+              </span>
             </div>
           </div>
         </div>
