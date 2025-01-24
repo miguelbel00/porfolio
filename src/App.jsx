@@ -245,7 +245,7 @@ const App = () => {
       >
         <ScrollReveal styles={{delay: 500,reset:true,duration:2000, distance: '30%', origin:'left'}}>
           <section className="text-gray-600 body-font">
-              <div className="container px-8 py-16 max-w-screen-xl mx-auto">
+              <div className="container px-8 py-16 max-w-screen-xl mx-auto text-center">
                 <div className="flex flex-wrap w-full mb-20">
                   <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                     <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900">Portfolio</h1>
@@ -308,13 +308,13 @@ const App = () => {
       >
         <ScrollReveal styles={{reset:true,duration:1800, distance: '30%', origin:'left'}} >
           <section className="text-gray-600 body-font sm:pt-0 pt-5  ">
-              <div className="container px-5  max-w-screen-xl mx-auto">
+              <div className="container px-5  max-w-screen-xl mx-auto text-center">
                 <div className="flex flex-col text-left w-full pb-5 ">
                   <h1 className="sm:text-3xl text-2xl font-bold pb-5 title-font text-gray-900">
                     Reach me at
                   </h1>
                 </div>
-                <div className="flex flex-wrap pt-10 justify-between ">
+                <div className="flex flex-wrap pt-10 justify-evenly ">
                   <div className="p-2 w-fit">
                     <div className="h-full flex  p-4 rounded-lg">
                     <a href="mailto:miguelabeltranp@gmail.com" target="_blank" rel="noopener noreferrer">
