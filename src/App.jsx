@@ -311,9 +311,8 @@ const App = () => {
               <div className="container px-5  max-w-screen-xl mx-auto">
                 <div className="flex flex-col text-left w-full pb-5 ">
                   <h1 className="sm:text-3xl text-2xl font-bold pb-5 title-font text-gray-900">
-                    Skills & Technologies
+                    Reach me at
                   </h1>
-                  <p className="sm:text-3xl !text-lg  title-font font-bold mb-4 text-gray-900">Contact me to work together</p>
                 </div>
                 <div className="flex flex-wrap pt-10 justify-between ">
                   <div className="p-2 w-fit">
