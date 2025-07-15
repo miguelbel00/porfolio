@@ -25,7 +25,44 @@ import serviceMcqueen from "./assets/loginService.png";
 import astrogamer from "./assets/astrogamer.png";
 import mayco from "./assets/mayco.png";
 import wallet from "./assets/wallet.jpg";
+import photo from "./assets/photo.png";
+import shipmaster from "./assets/shipmaster.png";
 import ScrollReveal from "./ScrollReveal";
+
+const projects = [
+  {
+    title: "ShipMaster Admin",
+    image: shipmaster,
+    link: "https://shipmaster-nine.vercel.app/",
+  },
+  {
+    title: "AstroGamer",
+    image: astrogamer,
+    link: "https://refactor-astro-gamer.vercel.app/",
+  },
+  {
+    title: "Mayco Cooperativa",
+    image: mayco,
+    link: "https://maycocoperativa.vercel.app/",
+  },
+  {
+    title: "phdanatempo",
+    image: photo,
+    link: "https://phdanatempo.vercel.app",
+  },
+  {
+    title: "Wallet Bank Alkemy",
+    image: wallet,
+    link: "https://github.com/miguelbel00/grupo-n-4",
+  },
+  {
+    title: "Service Mcqueen",
+    image: serviceMcqueen,
+    link: "https://github.com/miguelbel00/ProyectoFinalBD",
+  },
+
+];
+
 
 const App = () => {
   let [open, setOpen] = useState(false);
@@ -283,104 +320,34 @@ const App = () => {
                 </p>
               </div>
 
-              <div className="flex flex-wrap -m-4 justify-center">
-                <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
-                  <div className="bg-gray-100 p-6 rounded-lg ">
-                    <div className="relative group">
-                      <img
-                        className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6"
-                        src={mayco}
-                        alt="content"
-                      />
-                      <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
-                        <a
-                          href="https://www.cooperativamayco.com.ar"
-                          className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Demo
-                        </a>
-                      </div>
+              <div className="flex flex-wrap justify-center -m-4">
+            {projects.map((project, index) => (
+              <div key={index} className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
+                <div className="bg-gray-100 p-6 rounded-lg">
+                  <div className="relative group">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6"
+                    />
+                    <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-black text-white p-2 rounded-md hover:text-indigo-500 text-center"
+                      >
+                        Demo
+                      </a>
                     </div>
-                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                      Mayco Cooperativa
-                    </h2>
                   </div>
-                </div>
-                <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
-                  <div className="bg-gray-100 p-6 rounded-lg">
-                    <div className="relative group">
-                      <img
-                        className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6"
-                        src={astrogamer}
-                        alt="content"
-                      />
-                      <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
-                        <a
-                          href="https://p-grupal.vercel.app"
-                          className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Demo
-                        </a>
-                      </div>
-                    </div>
-                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                      AstroGamer
-                    </h2>
-                  </div>
-                </div>
-                <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
-                  <div className="bg-gray-100 p-6 rounded-lg">
-                    <div className="relative group">
-                      <img
-                        className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6"
-                        src={wallet}
-                        alt="content"
-                      />
-                      <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
-                        <a
-                          href="https://github.com/miguelbel00/grupo-n-4"
-                          className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Demo
-                        </a>
-                      </div>
-                    </div>
-                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                      Wallet Bank Alkemy
-                    </h2>
-                  </div>
-                </div>
-                <div className="xl:w-1/4 md:w-1/2 w-[350px] p-4">
-                  <div className="bg-gray-100 p-6 rounded-lg">
-                    <div className="relative group">
-                      <img
-                        className="group-hover:blur-[2px] transition-all duration-200 ease-out h-40 rounded aspect-[2/1] w-full object-cover object-center mb-6"
-                        src={serviceMcqueen}
-                        alt="content"
-                      />
-                      <div className="inset-0 absolute p-5 flex flex-col justify-center bg-black/60 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
-                        <a
-                          href="https://github.com/miguelbel00/ProyectoFinalBD"
-                          className="bg-black rounded-md text-white p-2  hover:text-indigo-500 ml-1 text-center"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Demo
-                        </a>
-                      </div>
-                    </div>
-                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                      Service Mcqueen
-                    </h2>
-                  </div>
+                  <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                    {project.title}
+                  </h2>
                 </div>
               </div>
+            ))}
+          </div>
             </div>
           </section>
         </ScrollReveal>
