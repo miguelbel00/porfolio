@@ -27,6 +27,7 @@ import mayco from "./assets/mayco.png";
 import wallet from "./assets/wallet.jpg";
 import photo from "./assets/photo.png";
 import shipmaster from "./assets/shipmaster.png";
+import albion from "./assets/albion.png";
 import ScrollReveal from "./ScrollReveal";
 
 const projects = [
@@ -44,6 +45,11 @@ const projects = [
     title: "Mayco Cooperativa",
     image: mayco,
     link: "https://maycocoperativa.vercel.app/",
+  },
+  {
+    title: "Data Albion Search",
+    image: albion,
+    link: "https://caerleon-marketplace.vercel.app/",
   },
   {
     title: "phdanatempo",
